@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Logo Font */
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/LEMONMILK-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/LEMONMILK-Medium.otf') format('opentype');
+    font-weight: medium;
+    font-style: medium;
+}
+
+@theme {
+    --font-LemonMilk: LemonMilk, sans-serif;
+    /* --font-sans: BrandonGrotesque, sans-serif */
+}
+
+@plugin "daisyui" {
+    themes: business --default, corporate, light
+}
+
+@plugin "daisyui/theme" {
+    name: "business";
+    default: true;
+
+    /* Primary color  */
+    --color-primary: rgb(253,199,0);
+
+    --color-secondary: rgb(0,0,0);
+}
+
+html {
+  scroll-padding-top: 6rem; /* match your header height */
+}
