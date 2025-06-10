@@ -4,8 +4,8 @@
 export const clientConfig = {
 
   // Themes / Colors
-  daisy_theme: "business",
-  logo_color: "#FDC700",
+  daisy_theme: "corporate",
+  logo_color: "#196C50",
   // Set primary / secondary colors in index.css
 
   // Other styling
@@ -13,17 +13,18 @@ export const clientConfig = {
 
 
   // General
-  short_name: "John's Auto Repair",
-  long_name: "John's Auto Repair LLC",
-  phone: "(801) 555-1234",
-  phoneLink: "8015551234",
-  email: "AMR_Auto@gmail.com",
-  address: "1145 Richards St,",
-  addressSecondary: "Salt Lake City, UT 84101",
-  addressFull: "1145 Richards St, Salt Lake City, UT 84101",
+  short_name: "Chuck's Service Center",
+  long_name: "Chuck's Service Center LLC",
+  phone: "(801) 467-4922",
+  phoneLink: "8014674922",
+  email: "Chucks_Service@gmail.com",
+  address: "1955 E 2700 S,",
+  addressSecondary: "Salt Lake City, UT 84106",
+  addressFull: "1955 E 2700 S, Salt Lake City, UT 84106",
 
   // Header
   logo: "/brand_imgs/logo.png",
+  browser_logo: "/brand_imgs/browser_logo.png"
 
 };
 
@@ -35,7 +36,7 @@ export const componentSelection = {
   
   // centeredPhoto,
   // leftPhoto
-  landing: "leftPhoto",
+  landing: "centeredPhoto",
 
   // default, 
   // primary
@@ -58,7 +59,7 @@ export const componentSelection = {
 
 export const landingConfig = {
   landing_img: "/brand_imgs/hero.png",
-  landing_title: "Quality Service at Record Speeds",
+  landing_title: "Quality Service For 40 Years",
   landing_subtext: "Honest, skilled mechanics serving Salt Lake City and beyond. We keep you running smoothly.",
   landing_cta: "GIVE US A CALL",
   landing_type: 0,
@@ -122,7 +123,7 @@ export const aboutUsConfig = {
   team_image: "/about_imgs/team.jpg",
   team_description: "Exceptional team members ready to get you back on the road with precision and care. Each technician brings years of experience, honesty, and a commitment to getting the job done right the first time.",
   owner_image: "/about_imgs/owner.png",
-  owner_name: "John Doe",
+  owner_name: "Chuck",
   owner_description: "Founded with a mission to redefine trust in auto repair, we’ve built our reputation on honesty, hard work, and community values. Whether it’s a quick tune-up or a major rebuild, you can count on us to get the job done right."
 }
 
@@ -199,23 +200,23 @@ export const reviewsConfig = [
 // <------- CONTACT INFO -------->
 
 export const contactConfig = {
-  phone: "(801) 555-1234",
-  phoneLink: "8015551234",
-  email: "AMR_Auto@gmail.com",
+  phone: "(801) 467-4922",
+  phoneLink: "8014674922",
+  email: "Chucks_Service@gmail.com",
   location: {
-    address: "1145 Richards St,",
-    addressSecondary: "Salt Lake City, UT 84101",
-    googleMapEmbedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.7052202371249!2d-111.89263766984047!3d40.74396671929422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f53ab3a61df5%3A0x16439d32409dd44b!2sAction%20Mobile%20Repair!5e0!3m2!1sen!2sus!4v1748289559907!5m2!1sen!2sus",
-    googleMapLink: "https://www.google.com/maps?q=Action+Mobile+Repair&ll=40.7439845,-111.892386",
-    appleMapLink: "https://maps.apple.com/?q=Action+Mobile+Repair&ll=40.7439845,-111.892386"
+    address: "1955 E 2700 S,",
+    addressSecondary: "Salt Lake City, UT 84106",
+    googleMapEmbedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2138.456175618875!2d-111.83592518672454!3d40.712870998143586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752603651ddb353%3A0x6cd99915d6b36f12!2sChuck&#39;s%20Service%20Center!5e0!3m2!1sen!2sus!4v1749596291135!5m2!1sen!2sus",
+    googleMapLink: "https://www.google.com/maps/place/Chuck's+Service+Center/@40.7129319,-111.8362067,18z/data=!4m14!1m7!3m6!1s0x8752603651ddb353:0x6cd99915d6b36f12!2sChuck's+Service+Center!8m2!3d40.7129655!4d-111.8352689!16s%2Fg%2F11b7khhqq2!3m5!1s0x8752603651ddb353:0x6cd99915d6b36f12!8m2!3d40.7129655!4d-111.8352689!16s%2Fg%2F11b7khhqq2?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D",
+    appleMapLink: "https://maps.apple.com/?ll=40.7129655,-111.8352689&q=Chuck%27s%20Service%20Center"
   },
   hours: [
-    { day: "Monday", time: "8 AM - 6 PM" },
-    { day: "Tuesday", time: "8 AM - 6 PM" },
-    { day: "Wednesday", time: "8 AM - 6 PM" },
-    { day: "Thursday", time: "8 AM - 6 PM" },
-    { day: "Friday", time: "8 AM - 6 PM" },
-    { day: "Saturday", time: "9 AM - 4 PM" },
+    { day: "Monday", time: "8 AM - 5 PM" },
+    { day: "Tuesday", time: "8 AM - 5 PM" },
+    { day: "Wednesday", time: "8 AM - 5 PM" },
+    { day: "Thursday", time: "8 AM - 5 PM" },
+    { day: "Friday", time: "8 AM - 5 PM" },
+    { day: "Saturday", time: "Closed" },
     { day: "Sunday", time: "Closed" },
   ]
 }

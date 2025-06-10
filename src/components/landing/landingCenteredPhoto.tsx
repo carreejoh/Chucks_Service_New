@@ -19,18 +19,18 @@ const LandingCenteredPhoto = React.forwardRef<HTMLDivElement, LandingCenteredPho
                 style={{ backgroundImage: `url(${landingConfig.landing_img})` }}
             >
                 <div className="absolute inset-0 bg-gray-800 opacity-80"></div>
-                <div className="relative z-10 max-w-4xl text-center px-6">
+                <div className="relative z-10 max-w-4xl text-center px-6 mt-32">
                     <h1 className="text-4xl md:text-5xl font-extrabold font-LemonMilk mb-4">
                         {landingConfig.landing_title}
                     </h1>
-                    <p className="text-lg md:text-xl text-base-content/90 mb-6">
+                    <p className="text-lg md:text-xl text- mb-6">
                         {landingConfig.landing_subtext}
                     </p>
                     <button
                         onClick={onScrollToContact}
                         className={`
                             ${clientConfig.borders}
-                            btn btn-lg bg-primary border-primary text-black font-bold text-lg
+                            btn btn-lg bg-primary border-primary text-base-100 font-bold text-lg
                             `}
                     >
                         {landingConfig.landing_cta}

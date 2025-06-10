@@ -13,7 +13,7 @@ const ContactDefault = React.forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <section
       ref={ref}
-      className="px-6 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48 py-16 bg-base-300 text-base-content/80"
+      className="px-6 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48 py-16 bg-base-200 text-base-content/80"
     >
       <h2 className="text-3xl font-bold font-LemonMilk text-center mb-12 text-base-content">
         Contact Us
@@ -37,7 +37,7 @@ const ContactDefault = React.forwardRef<HTMLDivElement>((_, ref) => {
             <h3 className="text-xl font-bold text-base-content">{clientConfig.short_name}</h3>
             <div className="flex items-center mt-2">
               <MapPin size={24} color={clientConfig.logo_color} />
-              <a href={mapLink} className="ml-2 underline">
+              <a href={mapLink} className="ml-2 underline text-base-content/80">
                 {contactConfig.location.address}
                 <br />
                 {contactConfig.location.addressSecondary}
@@ -45,13 +45,13 @@ const ContactDefault = React.forwardRef<HTMLDivElement>((_, ref) => {
             </div>
             <div className="flex items-center mt-3">
               <Phone size={24} color={clientConfig.logo_color} />
-              <a href={`tel:+1${contactConfig.phoneLink}`} className="ml-2 hover:text-primary">
+              <a href={`tel:+1${contactConfig.phoneLink}`} className="ml-2 hover:text-primary text-base-content/80">
                 {contactConfig.phone}
               </a>
             </div>
             <div className="flex items-center mt-3">
               <Mail size={24} color={clientConfig.logo_color} />
-              <a href={`mailto:${contactConfig.email}`} className="ml-2 hover:text-primary">
+              <a href={`mailto:${contactConfig.email}`} className="ml-2 hover:text-primary text-base-content/80">
                 {contactConfig.email}
               </a>
             </div>
@@ -60,7 +60,7 @@ const ContactDefault = React.forwardRef<HTMLDivElement>((_, ref) => {
           <div className="w-56">
             <h4 className="text-xl font-bold text-base-content/100">Hours of Operation</h4>
             {contactConfig.hours.map(({ day, time }) => (
-              <span key={day} className="flex justify-between mt-1">
+              <span key={day} className="flex justify-between mt-1 text-base-content/80">
                 {day}:<span>{time}</span>
               </span>
             ))}

@@ -6,7 +6,7 @@ import { getRelativeTime } from "../functions/functions";
 const ReviewsDefault: React.FC = () => {
     return (
         <section
-            className="px-6 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48 py-16 bg-base-300 text-base-content"
+            className="px-6 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48 py-16 bg-base-200 text-base-content"
         >
             <h2 className="text-3xl font-bold font-LemonMilk text-center mb-12 text-base-content">
                 What Our Customers Are Saying:

@@ -23,20 +23,20 @@ const HeaderWithContact: React.FC = () => {
         : contactConfig.location.googleMapLink;
 
     return (
-        <header className="w-full fixed top-0 z-50 bg-base-100 shadow-sm border-b-[2px] border-primary">
+        <header className="w-full fixed top-0 z-50 bg-base-100 shadow-md border-b-[0px] border-primary">
             <div className={`w-full flex md:flex-row flex-col md:p-2 pt-2 pb-2 md:items-center justify-end gap-4 bg-primary bg-opacity-100 px-4 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48`}>
-                <a href={`tel:+1${contactConfig.phoneLink}`} className="ml-2 flex items-center gap-1 font-medium italic text-base-100 hover:text-black">
+                <a href={`tel:+1${contactConfig.phoneLink}`} className="ml-2 flex items-center gap-1 font-medium italic text-base-100 hover:brightness-90">
                     <Phone size={16} className="rotate-45 " />
                     {contactConfig.phone}
                 </a>
-                <a href={mapLink} className="ml-2 md:mt-0 -mt-3 flex items-center gap-1 font-medium italic text-base-100 hover:text-black">
+                <a href={mapLink} className="ml-2 md:mt-0 -mt-3 flex items-center gap-1 font-medium italic text-base-100 hover:brightness-90">
                     <MapPin size={19} />
                     {clientConfig.addressFull}
                 </a>
             </div>
             <div className="h-24 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48">
                 <Link to="/" className="">
-                    <img className="" alt="logo" src={clientConfig.logo} />
+                    <h1 style={{ textShadow: '2px 2px 2px rgba(0,0,0,0.3)' }} className="text-primary font-bold text-3xl sm:text-4xl italic -mt-1">CHUCK'S SERVICE CENTER</h1>
                 </Link>
                 {/* Desktop nav */}
                 <nav className="hidden md:flex space-x-4">
@@ -47,7 +47,7 @@ const HeaderWithContact: React.FC = () => {
                             className="tab"
                             onClick={() => setSelectedLocation(key)}
                         >
-                            <p className={`text-lg font-medium font-LemonMilk ${selectedLocation === key ? "text-primary" : "text-base-content"}`}>
+                            <p className={`text-lg font-LemonMilk ${selectedLocation === key ? "text-primary font-semibold" : "text-gray-500 font-semibold"}`}>
                                 {name}
                             </p>
                         </Link>
@@ -56,7 +56,7 @@ const HeaderWithContact: React.FC = () => {
 
                 {/* Mobile toggle */}
                 <button
-                    className="md:hidden p-2 rounded-md bg-primary text-black focus:outline-none focus:ring"
+                    className="md:hidden p-2 rounded-md bg-primary text-base-100 focus:outline-none focus:ring"
                     onClick={() => setMobileOpen((o) => !o)}
                     aria-label="Toggle menu"
                 >
@@ -78,7 +78,7 @@ const HeaderWithContact: React.FC = () => {
                                     setMobileOpen(false);
                                 }}
                             >
-                                <p className={`text-lg font-medium ${selectedLocation === key ? "text-primary" : "text-base-content"}`}>
+                                <p className={`text-lg font-semibold ${selectedLocation === key ? "text-primary" : "text-base-content"}`}>
                                     {name}
                                 </p>
                             </Link>

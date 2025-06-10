@@ -49,14 +49,14 @@ const ServiceCards = React.forwardRef<HTMLDivElement>((_, ref) => {
           ))}
         </div>
         <div className="w-full px-6 py-6 text-center">
-          <p className="text-lg font-semibold text-base-content mb-4">
+          <p className="text-lg font-semibold text-base-100 mb-4">
             Not seeing what you're looking for? We offer much more than what’s listed here.
           </p>
           <Link
             to="/#contact"
             className={`
             ${clientConfig.borders}
-            btn btn-lg bg-primary border-primary text-black font-bold text-lg
+            btn btn-lg bg-primary border-primary text-base-100 font-bold text-lg
           `}
           >
             Contact Us to Inquire

@@ -15,7 +15,7 @@ const AboutUsOwnerTeamFlexAngle = React.forwardRef<HTMLDivElement>((_, ref) => {
     return (
         <section
             ref={ref}
-            className="relative w-full overflow-hidden px-6 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48 py-16 text-base-content bg-base-100"
+            className="relative w-full overflow-hidden px-6 sm:px-6 md:px-8 lg:px-24 xl:px-28 2xl:px-48 py-16 text-base-content bg-base-200"
         >
 
             {/* Divider Overlay */}
@@ -24,7 +24,7 @@ const AboutUsOwnerTeamFlexAngle = React.forwardRef<HTMLDivElement>((_, ref) => {
                     className="absolute inset-0"
                     style={{
                         clipPath,
-                        backgroundColor: "rgba(24,24,24)",
+                        backgroundColor: "rgba(209,209,209,1)",
                     }}
                 />
                 <div className="absolute inset-0 bg-base-300 opacity-10" />
@@ -38,7 +38,7 @@ const AboutUsOwnerTeamFlexAngle = React.forwardRef<HTMLDivElement>((_, ref) => {
                 {/* Team Section */}
                 <div className="flex flex-col gap-6 text-center md:text-left md:w-1/2 items-center md:items-start">
                     <h3 className="text-2xl font-semibold text-base-content -mb-2">Meet the Team</h3>
-                    <p className="text-md leading-relaxed indent-6 text-base-content/70 max-w-3xl">
+                    <p className="text-md leading-relaxed indent-6 text-base-content/80 max-w-3xl">
                         "{aboutUsConfig.team_description}"
                     </p>
                     <img
@@ -56,10 +56,10 @@ const AboutUsOwnerTeamFlexAngle = React.forwardRef<HTMLDivElement>((_, ref) => {
                         alt="Owner"
                         className="w-[40%] max-w-sm brightness-80 rounded-sm border-2 object-cover shadow-md"
                     />
-                    <p className="text-md leading-relaxed indent-6 text-base-content/70 max-w-3xl">
+                    <p className="text-md leading-relaxed indent-6 text-base-content/80 max-w-3xl">
                         "{aboutUsConfig.owner_description}"
                     </p>
-                    <p className=" text-xl text-base-content font-semibold w-full">
+                    <p className=" text-xl text-base-content -mt-2 font-semibold w-full">
                         - {aboutUsConfig.owner_name}
                     </p>
                 </div>
