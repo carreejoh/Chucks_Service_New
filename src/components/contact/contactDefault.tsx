@@ -22,7 +22,7 @@ const ContactDefault = React.forwardRef<HTMLDivElement>((_, ref) => {
         {/* Map */}
         <div className="w-full lg:w-1/2">
           <iframe
-            src={contactConfig.location.googleMapEmbedLink}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.6229247534376!2d-111.83546830747527!3d40.712984590518325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752603651ddb353%3A0x6cd99915d6b36f12!2sChuck&#39;s%20Service%20Center!5e0!3m2!1sen!2sus!4v1749596537361!5m2!1sen!2sus"
             width="100%"
             height="350"
             loading="lazy"
